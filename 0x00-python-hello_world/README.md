@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ALX HIGHER LEVEL PROGRAMMING
 ~~PYTHON
 
@@ -13,3 +14,8 @@ ALX HIGHER LEVEL PROGRAMMING
 8. Create a new sentence
 9. Easter egg
 10. Linked list cycle
+=======
+FIRST TOPIC
+HELLO WORLD
+
+>>>>>>> 60d35bb4bbf12eddccc46cf72e222705c8a68390
