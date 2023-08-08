@@ -9,7 +9,6 @@ if cmpr > 5:
 elif cmpr == 0:
     print(f"Last digit of {number:d} is {cmpr:d} and is 0")
 elif cmpr < 0:
-    cmpr = (-cmpr)
-    print(f"Last digit of {number:d} is {cmpr:d} and is less than 6 and not 0")
+    print(f"Last digit of {number:d} is -{cmpr:d} and is less than 6 and not 0")
 elif cmpr < 6 and cmpr != 0:
     print(f"Last digit of {number:d} is {cmpr:d} and is less than 6 and not 0")
