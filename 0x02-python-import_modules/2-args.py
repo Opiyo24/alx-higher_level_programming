@@ -5,7 +5,6 @@ if __name__ == "__main__":
     passed to it in the command line
     """
     args = sys.argv
-    #print(args)
     length = len(args)
 
     if length == 0:
