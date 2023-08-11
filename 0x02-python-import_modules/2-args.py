@@ -12,8 +12,8 @@ if __name__ == "__main__":
         print("0 arguments")
     elif length == 1:
         print("1 argument")
-        print(f"{length:d}: {args[0]}")
+        print("{}: {}".format(length, args[0]))
     else:
-        print(f"{length:d} arguments")
+        print("{} arguments".format(length))
         for i in range(length):
-            print(f"{(i + 1):d}: {args[i]}")
+            print("{}: {}".format((i + 1), args[i]))
