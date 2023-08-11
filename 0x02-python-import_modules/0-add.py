@@ -5,4 +5,4 @@ from add_0 import add
 a = 1
 b = 2
 number = add_0.add(a, b)
-print(f"{a:d} + {b:d} = {number:d}")
+print("{} + {} = {}".format(a, b, add(a,b)))
