@@ -8,7 +8,7 @@ if __name__ == "__main__":
     length = len(args)
 
     if length == 1:
-        print("{} argument.".format(length - 1))
+        print("{} arguments.".format(length - 1))
     elif length == 2:
         print("{} argument:".format(length -1))
     else:
