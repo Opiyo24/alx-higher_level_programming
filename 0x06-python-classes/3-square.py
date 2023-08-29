@@ -2,13 +2,13 @@
 
 """Class square."""
 class Square:
-    """Initializing the class"""
+    """Initializing the class."""
 
-    def __Init__(self, size = 0);
-    """ An instance of the class
+    def __init__(self, size = 0);
+    """ An instance of the class.
 
     Args:
-        size (int): class size
+        size (int): class size.
     """
     if not isinstance(size, int):
         raise TypeError("size must be an integer")
@@ -18,6 +18,6 @@ class Square:
     self.__size = size
 
     def area(self):
-        """Calculaating the area of square"""
+        """Return the area of square."""
 
-        return self.__size ** 2
+        return self.size ** 2
