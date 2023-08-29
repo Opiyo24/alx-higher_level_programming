@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 
 """Class square."""
-class Square:
-    """Initializing the class."""
 
-    def __init__(self, size = 0);
+
+class Square:
+    """Represent square."""
+
+    def __init__(self, size=0);
     """ An instance of the class.
 
     Args:
