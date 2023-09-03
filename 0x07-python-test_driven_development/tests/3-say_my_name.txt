@@ -1,0 +1,66 @@
+==============================================
+Test for 3-say_my_name.py
+==============================================
+
+The library has only one function
+``say_my_name()`` that prints the names to the standard output
+Importation
+===========
+::
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Strings
+=======
+::
+    >>> say_my_name("John","Smith")
+    My name is John Smith
+
+    >>> say_my_name("Walter","White")
+    My name is Walter White
+
+    >>> say_my_name("Bob")
+    My name is Bob 
+
+    >>> say_my_name("Walter",'1')
+    My name is Walter 1
+
+    >>> say_my_name('12',"White")
+    My name is 12 White
+
+
+Numbers - Ints
+==============
+::
+    >>> say_my_name(12,"White")
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
+    >>> say_my_name("Walter",1)
+    Traceback (most recent call last):
+    TypeError: last_name must be a string
+
+
+Numbers - floats
+================
+::
+    >>> say_my_name(12.0,"White")
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
+    >>> say_my_name("Walter",1.0)
+    Traceback (most recent call last):
+    TypeError: last_name must be a string
+
+None
+====
+::
+    >>> say_my_name(None)
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
+
+One parameter
+=============
+::
+    >>> say_my_name("","Bob")
+    My name is  Bob
