@@ -52,9 +52,9 @@ Exception - when a is neithe int nor float
     Traceback (most recent call last):
     TypeError: a must be an integer
 
-Exception - passing no parameter
+Exception - adding a letter and a number
 ===============================
 ::
-    #>>> add_integer()
+    >>> add_integer('1',1)
     Traceback (most recent call last):
     TypeError: a must be an integer
