@@ -1,0 +1,69 @@
+===================================
+Testing the module 4-print_square.txt
+===================================
+
+The module is made up of one function
+``print_square`` that prints a square shape
+to that standard output using the cjharacter '#'
+
+Importation
+===========
+::
+    >>> print_square = __import__('4-print_square').print_square
+
+Test for non-integers
+=====================
+::
+    >>> print_square('4')
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+
+    >>> print_square('a')
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+
+    >>> print_square(4.0)
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+
+
+Test for integers
+=================
+::
+    >>> print_square(1)
+    #
+
+    >>> print_square(3)
+    ###
+    ###
+    ###
+
+    >>> print_square(5)
+    #####
+    #####
+    #####
+    #####
+    #####
+
+    >>> print_square(10)
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+
+Test for negative values
+========================
+::
+    >>> print_square(-4)
+    Traceback (most recent call last):
+    ValueError: size must be >= 0
+
+    >>> print_square(-1)
+    Traceback (most recent call last):
+    ValueError: size must be >= 0
