@@ -1,0 +1,53 @@
+=======================================
+Testing 0-add_integer.py file
+=======================================
+The library has got one function
+``add_integer()``
+
+Numbers - Positive numbers
+==========================
+``add_integer()`` returns the addition of two Numbers
+
+::
+    >>> add_integer = __import__('0-add_integer').add_integer
+    >>> add_integer(1,2)
+    3
+
+Numbers - Negative numbers
+==========================
+::
+    >>> add_integer(100,-2)
+    98
+
+Numbers - where second variable isnt provided
+=============================================
+::
+    >>> add_integer(2)
+    100
+
+Numbers - Involving floats and negatives
+========================================
+::
+    >>> add_integer(100.3,-2)
+    98
+
+Exceptions - b is neither float nor int
+======================================
+::
+    >>> add_integer(4, "School")
+    Traceback (most recent call last):
+    TypeError: b must be an integer
+
+Exceptions - None
+=================
+::
+    >>> add_integer(None)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+Exception - when a is neithe int nor float
+==========================================
+::
+    >>> add_integer("School", 3)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
