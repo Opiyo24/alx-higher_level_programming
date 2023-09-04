@@ -6,4 +6,5 @@ class Rectangle:
         None
     Return: 
         None"""
-    pass
+    def __init__(self):
+        pass
