@@ -10,8 +10,8 @@ class Rectangle:
             width (optional): width
         """
         type(self).number_of_instances += 1
-        self.height = height
         self.width = width
+        self.height = height
     
     @property
     def width(self):
@@ -20,6 +20,7 @@ class Rectangle:
             width
         """
         return (self.__width)
+    
     @width.setter
     def width(self, value):
         """Set width value
@@ -41,7 +42,7 @@ class Rectangle:
         Return:
             height
         """
-        return (self.__height)
+        return self.__height
     
     @height.setter
     def height(self, value):
@@ -76,7 +77,7 @@ class Rectangle:
     
     def __str__(self):
         """Comments"""
-        if self.__width ==0 or self.__height == 0:
+        if self.__width == 0 or self.__height == 0:
             return("")
         
         rect = []
@@ -93,6 +94,6 @@ class Rectangle:
         return (rect)
     
     def __del__(self):
-        """"""
+        """Prints message while deleting instance"""
         type(self).number_of_instances -= 1
         print('Bye rectangle...')
