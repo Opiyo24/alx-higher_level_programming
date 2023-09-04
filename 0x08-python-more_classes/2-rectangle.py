@@ -2,7 +2,7 @@
 """Module for class rectangle"""
 class Rectangle:
     """Initializing class rectangle"""
-    def __init__(self, height=0, width=0):
+    def __init__(self, width=0, height=0):
         """Instance of class rectangle
         Args:
             height (optional): height
