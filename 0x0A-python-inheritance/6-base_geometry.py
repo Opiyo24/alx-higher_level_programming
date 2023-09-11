@@ -1,4 +1,4 @@
-#!/bin/usr/python3
+#!/usr/bin/python3
 """Class module that raises an exception"""
 class BaseGeometry:
     """base class"""
