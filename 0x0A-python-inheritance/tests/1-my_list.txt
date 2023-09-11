@@ -1,0 +1,25 @@
+===================================================
+Testing 1-my_list.py
+===================================================
+The library has one function ```print_sorted```
+
+This is an example text file in restructured text format.
+First import ``MyList`` from ``1-my_list`` module
+
+::
+	>>> MyList = __import__('1-my_list').MyList
+
+	>>> list = MyList()
+
+	>>> list.print_sorted()
+	[]
+
+	>>> list.append(2)
+	>>> list.append(2)
+	>>> list.append(2)
+	>>> list.append(2)
+	>>> list.append(2)
+	>>> list.append(2)
+	>>> list.append(2)
+	>>> list.print_sorted()
+	[2, 2, 2, 2, 2, 2, 2]
