@@ -1,5 +1,5 @@
-
-from rectangle import Rectangle
+#!/usr/bin/python3
+from module.rectangle import Rectangle
 import unittest
 
 class TestRectangle(unittest.TestCase):
