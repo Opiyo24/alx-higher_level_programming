@@ -29,7 +29,7 @@ class Base:
             if list_objs is None or list_objs == []:
                 jsonfile.write("[]")
             else:
-                obj_list = [o.to_dictionary() for i in list_objs]
+                obj_list = [i.to_dictionary() for i in list_objs]
                 jsonfile.write(Base.to_json_string(obj_list))
     
     @staticmethod
