@@ -1,14 +1,16 @@
 #!/usr/bin/python3
-
+"""Draws the shapes to teh turtle interface"""
 import json
 import os
 import csv
 import turtle
 
 class Base:
+    """instance initialiozation and indexing"""
     __nb_objects = 0 #Private class attribute - Keeps track of number of objects created
 
     def __init__(self, id=None):#Constructor for the class // Optional id argument
+        """initializing with an optional id value"""
         if id is not None:
             self.id = id
         else:
@@ -17,6 +19,7 @@ class Base:
 
     @staticmethod
     def to_json_string(list_dictionaries):
+        """converts python strings to json dictionaries"""
         if list_dictionaries == None or len(list_dictionaries) == 0:
             return "[]"
         else:
@@ -24,6 +27,7 @@ class Base:
     
     @classmethod
     def save_to_file(cls, list_objs):
+        """saves the json dictionaries to a json file"""
         filename = cls.__name__ + ".json"
         with open(filename, mode="w", encoding="UTF-8") as jsonfile:
             if list_objs is None or list_objs == []:

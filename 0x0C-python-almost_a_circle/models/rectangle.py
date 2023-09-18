@@ -2,7 +2,6 @@
 """Defines a rectangle class."""
 from models.base import Base
 
-
 class Rectangle(Base):
     """Represent a rectangle."""
 
@@ -34,6 +33,7 @@ class Rectangle(Base):
 
     @width.setter
     def width(self, value):
+        """set the width of the rectangle"""
         if type(value) != int:
             raise TypeError("width must be an integer")
         if value <= 0:
@@ -47,6 +47,7 @@ class Rectangle(Base):
 
     @height.setter
     def height(self, value):
+        """set the height of the rectangle"""
         if type(value) != int:
             raise TypeError("height must be an integer")
         if value <= 0:
@@ -60,6 +61,7 @@ class Rectangle(Base):
 
     @x.setter
     def x(self, value):
+        """set the coordinates of the rectangle"""
         if type(value) != int:
             raise TypeError("x must be an integer")
         if value < 0:
@@ -73,6 +75,7 @@ class Rectangle(Base):
 
     @y.setter
     def y(self, value):
+        """set the y coordinates of the rectangle"""
         if type(value) != int:
             raise TypeError("y must be an integer")
         if value < 0:

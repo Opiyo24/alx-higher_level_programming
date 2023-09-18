@@ -2,7 +2,6 @@
 """Defines a square class."""
 from models.rectangle import Rectangle
 
-
 class Square(Rectangle):
     """Represent a square."""
 
@@ -24,6 +23,7 @@ class Square(Rectangle):
 
     @size.setter
     def size(self, value):
+        """sets the size of the square"""
         self.width = value
         self.height = value
 
