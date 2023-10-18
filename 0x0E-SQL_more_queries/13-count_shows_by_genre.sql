@@ -1,4 +1,4 @@
-
+-- mport the database dump from hbtn_0d_tvshows to your MySQ
 
 
 SELECT name AS genre, COUNT(*) AS number_of_shows FROM tv_genres

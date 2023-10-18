@@ -1,4 +1,4 @@
-
+-- Import the database dump from hbtn_0
 
 
 SELECT title, tv_genres.name FROM tv_shows

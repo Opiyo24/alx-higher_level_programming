@@ -1,4 +1,4 @@
-
+-- Import the database dump from hbtn_0d_tvshows to your
 
 
 SELECT title FROM tv_shows
