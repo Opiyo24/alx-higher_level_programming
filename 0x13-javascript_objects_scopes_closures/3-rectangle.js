@@ -7,15 +7,9 @@ class Rectangle {
     }
   }
   function print() {
-    const i = 0;
-    const x = 0;
-
-    while (i < this.width) {
-      while (x < this.height) {
-        console.log(`X`);
-        x++;
-      }
-      i++;
+    for (let i = 0; i < this.height; i++) {
+      console.log(`X`.repeat(this.width));
+    }
 }
 
 module.exports = Rectangle;
